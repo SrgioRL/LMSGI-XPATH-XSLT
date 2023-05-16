@@ -1,0 +1,111 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap");
+
+body {
+  font-family: "Montserrat", sans-serif;
+  width: 75%;
+  background-color: rgb(255, 250, 242);
+  margin: 0 auto;
+  padding: 20px;
+}
+
+#cabecera {
+  text-align: center;
+  border-radius: 5px;
+  color: #333333;
+  background-color: blanchedalmond;
+  box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.6);
+  padding: 5px;
+}
+
+h2 {
+  color: #666666;
+}
+
+a {
+  display: block;
+  margin: 0 auto;
+  padding: 10px 0;
+  text-align: center;
+  width: 50%;
+  height: fit-content;
+  border-radius: 5px;
+  background-color: blanchedalmond;
+  box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.6);
+}
+
+a:hover {
+  background-color: rgb(252, 222, 178);
+}
+
+a img {
+  width: 150px;
+  height: 50px;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+table,
+th,
+td {
+  border: 1px solid #999999;
+}
+
+th,
+td {
+  padding: 8px;
+}
+
+th {
+  background-color: #eeeeee;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+/* Estilos específicos */
+
+/* Formulario de contacto */
+form {
+  width: 60%;
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+  color: #666666;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #999999;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-bottom: 12px;
+}
+
+input[type="submit"] {
+  background-color: #999999;
+  color: #ffffff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #777777;
+}
