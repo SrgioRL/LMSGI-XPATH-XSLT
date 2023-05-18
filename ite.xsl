@@ -30,12 +30,12 @@
 
                                 <table>
                                     <tr>
-                                        <td class="celdasContacto">
+                                        <th class="celdasContacto">
                                             <h3>Empresa</h3>
-                                        </td>
-                                        <td class="celdasContacto">
+                                        </th>
+                                        <th class="celdasContacto">
                                             <h3>Teléfono</h3>
-                                        </td>
+                                        </th>
                                     </tr>
                                     <tr>
                                         <td class="celdasContacto">

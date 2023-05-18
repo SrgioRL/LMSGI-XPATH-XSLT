@@ -75,9 +75,11 @@ main {
 }
 
 .celdasContacto {
+  border: none;
   width: 50%;
   text-align: center;
 }
+
 
 #personal {
   display: flex;
@@ -130,7 +132,7 @@ h3 {
   margin-top: 10px;
   text-align: center;
   color: #000000;
-  background-color: #878788;
+  background-color: #87878886;
 }
 
 #ciclos {
@@ -149,7 +151,7 @@ table {
 }
 
 th,
-td:not(#contacto td) {
+td {
   border: 1px solid black;
   border-radius: 3px;
   padding: 8px;
