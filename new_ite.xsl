@@ -5,20 +5,19 @@
     <xsl:template match="/">
 
         <edix>
-            <datos>
-                <nombre>
-                    <xsl:value-of select="ite/@nombre"/>
-                </nombre>
-                <empresa>
-                    <xsl:value-of select="ite/empresa"/>
-                </empresa>
-                <telefono>
-                    <xsl:value-of select="ite/telefono"/>
-                </telefono>
-                <web>
-                    <xsl:value-of select="ite/@web"/>
-                </web>
-            </datos>
+            <xsl:attribute name="empresa">
+                <xsl:value-of select="ite/empresa"/>
+            </xsl:attribute>
+            <xsl:attribute name="telefono">
+                <xsl:value-of select="ite/telefono"/>
+            </xsl:attribute>
+            <nombre>
+                <xsl:value-of select="ite/@nombre"/>
+            </nombre>
+            <web>
+                <xsl:value-of select="ite/@web"/>
+            </web>
+
 
             <equipo>
                 <direccion>
@@ -55,7 +54,7 @@
             </equipo>
 
             <ciclosOfertados>
-                <xsl:for-each select="ite/ciclos">
+                <xsl:for-each select="ite/ciclos/ciclo">
                     <ciclo>
                         <xsl:attribute name="id">
                             <xsl:value-of select="@id"/>
@@ -63,12 +62,13 @@
                         <xsl:attribute name="grado">
                             <xsl:value-of select="grado"/>
                         </xsl:attribute>
-                        <año>
-                            <xsl:value-of select="@año"/>
-                        </año>
                         <nombre>
                             <xsl:value-of select="nombre"/>
                         </nombre>
+                        <año>
+                            <xsl:value-of select="decretoTitulo/@año"/>
+                        </año>
+
                     </ciclo>
                 </xsl:for-each>
             </ciclosOfertados>
