@@ -2,8 +2,15 @@
 
 body {
   font-family: "Montserrat", sans-serif;
-  background-color: rgb(255, 255, 255);
   margin: 0 auto;
+  background-image: url("img/back1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+#contenedor {
+  z-index: 2;
 }
 
 #cabecera {
@@ -16,53 +23,140 @@ body {
   background-color: white;
   color: #333333;
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.6);
-  z-index: 1;
+  z-index: 3;
 }
 
 #logo {
   position: relative;
   text-align: center;
   width: 100%;
-  top: 65px;
+  top: 62px;
   height: 125px;
+}
+
+h1:not(#cabecera h1) {
+  width: 50%;
+  margin: 30px auto 40px auto;
+  padding: 5px 0;
+  text-align: center;
+  color: #333;
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+#sombra {
+  position: absolute;
+  bottom: -10px;
+  width: 100%;
+  height: 5px;
+  box-shadow: 0 -2px 5px -1px rgba(0, 0, 0, 0.6);
 }
 
 main {
   position: relative;
   top: 68px;
-  padding-top: 10px;
-  box-shadow: 0px -2px 4px rgba(0, 0, 0, 0.5);
+  padding: 10px 0;
   width: 100%;
 }
 
 #contenido {
   margin: auto;
-  width: 65%;
+  width: 60%;
 }
 
-h2 {
-  color: #666666;
+#contacto {
+  margin: 0 auto 75px auto;
+  padding: 1px 0;
+  border-radius: 3px;
+  width: 50%;
+  background-image: url(img/back2.png);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.celdasContacto {
+  width: 50%;
+  text-align: center;
+}
+
+#personal {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  margin-bottom: 75px;
+}
+
+#director,
+#jestudios {
+  border-radius: 3px;
+  width: 25%;
+  text-align: center;
+  background-image: url(img/back2.png);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+#profesores {
+  border-radius: 3px;
+  width: 35%;
+  text-align: center;
+  background-image: url(img/back2.png);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+#proftable {
+  padding: 5px;
+  border: none;
+}
+
+#proftable th {
+  background-color: #c4c4c48c;
+  border-radius: 3px;
+}
+
+#director h3,
+#jestudios h3,
+#profesores h3 {
+  padding: 5px;
+  margin: auto;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+  background-color: #87878886;
+  margin-top: 30px;
+  text-align: center;
+  color: #000000;
+}
+
+h3 {
+  border-radius: 3px;
+  margin-top: 10px;
+  text-align: center;
+  color: #000000;
+  background-color: #878788;
+}
+
+#ciclos {
+  border-radius: 3px;
+  margin: 0 auto 75px auto;
+  width: 75%;
+  padding: 15px;
+  text-align: center;
+  background-image: url(img/back2.png);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
 table {
-  border-collapse: collapse;
   width: 100%;
-  margin-bottom: 20px;
-}
-
-table,
-th,
-td {
-  border: 1px solid #999999;
+  margin-bottom: 15px;
 }
 
 th,
-td {
+td:not(#contacto td) {
+  border: 1px solid black;
+  border-radius: 3px;
   padding: 8px;
 }
 
-th {
-  background-color: #eeeeee;
+#ciclos th {
+  background-color: #c4c4c48c;
 }
 
 ul {
@@ -70,22 +164,19 @@ ul {
   padding: 0;
 }
 
-/* Estilos específicos */
-
-/* Formulario de contacto */
 form {
+  margin: 0 auto 150px auto;
   width: 60%;
-  background-color: #ffffff;
   padding: 20px;
   border-radius: 4px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  margin-bottom: 20px;
+  background-image: url(img/back2.png);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
 label {
   display: block;
   margin-bottom: 8px;
-  color: #666666;
+  padding: 5px;
 }
 
 input[type="text"],
@@ -99,15 +190,46 @@ textarea {
   margin-bottom: 12px;
 }
 
+#submit {
+  text-align: center;
+}
 input[type="submit"] {
-  background-color: #999999;
-  color: #ffffff;
+  font-size: 16px;
+  width: 50%;
+  color: #333;
   border: none;
   padding: 10px 20px;
   border-radius: 4px;
   cursor: pointer;
+  background-color: #f2f2f2;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 1);
 }
 
 input[type="submit"]:hover {
-  background-color: #777777;
+  background-color: #a1a1a1;
+}
+
+footer {
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  padding: 5px 0;
+  background-color: #f2f2f2;
+  box-shadow: 0 -3px 5px rgba(0, 0, 0, 0.5);
+}
+
+footer ul li {
+  display: inline;
+  margin: 0 20px 0 20px;
+}
+
+footer img {
+  width: 50px;
+  height: 50px;
+}
+
+footer img:hover{
+background-color: #a5a5a5;
+border-radius: 3px;
+
 }
